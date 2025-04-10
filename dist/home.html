@@ -1,67 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
     <title>FCA TAILWINDCSS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__branding">
+            <img src="./img/fca-logo-300x116.webp" alt="FCA-Logo" />
+            <div
+              class="header__contactInfo hidden md:block md:flex md:items-center"
+            >
+              <ul>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>(049) 521-0732</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-retro"></i>
+                  <p>(+63) 908-202-0749 | (+63) 926-363-9722</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#" class="btn bg--blue">Facebook</a></li>
+                <li><a href="#" class="btn bg--border">FAQ's</a></li>
+              </ul>
+            </div>
+            <div class="burger__menu cursor-pointer">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="header__navd">
+            <ul>
+              <li><a href="" class="active">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">ADMISSION</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">GALLERY</a></li>
+              <li><a href="">CONTACT</a></li>
+              <li><a href="">LITERARIO</a></li>
+              <a href="" class="btn bg--yellow">GIVE</a>
+            </ul>
+          </div>
+          <div class="header__action">
+            <ul class="header__navm">
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">ADMISSION</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">GALLERY</a></li>
+              <li><a href="">CONTACT</a></li>
+              <li><a href="">LITERARIO</a></li>
+              <li><a href="" class="btn bg--yellow">GIVE</a></li>
+            </ul>
+            <div class="header__contactInfo">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>(049) 521-0732</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-retro"></i>
+                  <p>(+63) 908-202-0749 | (+63) 926-363-9722</p>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="#" class="btn bg--blue">Facebook</a></li>
+                <li><a href="#" class="btn bg--border--yellow">FAQ's</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="homeBanner">
+      <div class="container">
+        <div class="homeBanner__wrapper">
+          <h1>Building Faith, Character and Academic Excellence</h1>
+          <p>
+            We genuinely care about the holistic development of our students,
+            and continue to reach for our vision of impacting the nation through
+            the development of Godly steward leaders.
+          </p>
+          <a href="#" class="btn bg--green">Inquire now!</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="admissionChoice">
         <div class="container">
-            <div class="header__wrapper">
-                <div class="header__branding">
-                    <img src="./img/fca-logo-300x116.webp" alt="FCA-Logo">
-                    <div class="header__contactInfo">
-                        <ul>
-                            <li><i class="fa-solid fa-phone"></i>
-                                <p>(049) 521-0732</p>
-                            </li>
-                            <li><i class="fa-solid fa-mobile-retro"></i>
-                                <p> (+63) 908-202-0749 | (+63) 926-363-9722</p>
-                            </li>
-                        </ul>
-                        <a href="#" class="btn bg--blue">Facebook</a>
-                        <a href="#" class="btn bg--border">FAQ's</a>
-                    </div>
-                    <div class="burger__menu cursor-pointer">
-                        <span></span><span></span><span></span>
-                    </div>
+            <div class="admissionChoice__wrapper">
+                <div class="admissionChoice__info">
+
                 </div>
-                <div class="header__navd">
-                    <ul>
-                        <li><a href="" class="active">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">ADMISSION</a></li>
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">GALLERY</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <li><a href="">LITERARIO</a></li>
-                        <a href="" class="btn bg--yellow ">GIVE</a>
-                    </ul>
-                </div>
-                <div class="header__navm">
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">ADMISSION</a></li>
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">GALLERY</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <li><a href="">LITERARIO</a></li>
-                        <li><a href="" class="btn bg--yellow">GIVE</a></li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
-    </header>
+    </section>
 
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
