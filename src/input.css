@@ -21,7 +21,7 @@
   }
 
   .header {
-    @apply font-[Raleway] relative;
+    @apply font-[Raleway] relative text-darkgray;
   }
 
   .header .header__branding {
@@ -71,10 +71,10 @@
   .header .header__contactInfo {
     @apply md:top-0;
   }
-  .header .header__contactInfo ul{
+  .header .header__contactInfo ul {
     @apply md:flex;
   }
-  .header .header__contactInfo ul li{
+  .header .header__contactInfo ul li {
     @apply gap-4;
   }
 
@@ -100,18 +100,96 @@
   }
 
   /* banner */
-.homeBanner {
-    @apply bg-homeBannerImage  h-[90vh] bg-no-repeat bg-cover text-light
-}
-.homeBanner__wrapper {
+  .homeBanner {
+    @apply bg-homeBannerImage  h-[80vh] bg-no-repeat bg-cover text-light;
+  }
+  .homeBanner__wrapper {
     @apply text-center py-[7rem];
-}
-.homeBanner__wrapper h1 {
+  }
+  .homeBanner__wrapper h1 {
     @apply font-serif flex text-[clamp(39.36px,4vw,80px)] mb-[20px];
-}
-.homeBanner__wrapper p {
-    @apply mb-[5rem] max-w-[45rem] m-auto;
-}
+  }
+  .homeBanner__wrapper p {
+    @apply mb-[5rem] max-w-[50rem] m-auto text-base;
+  }
+
+  /* admission choice */
+  .admissionChoice__wrapper {
+    @apply flex flex-col relative 
+  }
+  .admissionChoice__info  {
+ @apply absolute mt-[-6rem] flex place-self-center
+  }
+  .admissionChoice__info ul {
+    @apply flex text-center bg-light rounded-lg justify-between max-w-[60rem] py-12 m-auto shadow-xl ;
+  }
+  .admissionChoice__info ul li {
+    @apply border-r-2 flex px-12 
+  }
+  .admissionChoice__info ul li i {
+    @apply text-darkgray text-[2.8rem]
+  }
+  .admissionChoice__info ul li:last-child {
+    @apply border-none
+  }
+  .admissionChoice__info ul li h3 {
+    @apply text-[24px] font-semibold text-darkgreen;
+  }
+  .admissionChoice__info ul li small {
+    @apply text-darkgray text-[12px]
+  }
+  .admissionChoice__wrapper iframe{
+    @apply mt-[11rem] mb-[5rem]
+  }
+  /* list */
+  .list__wrapper {
+    @apply md:grid md:grid-cols-[_1fr,_1fr] justify-items-center items-center md:p-[6rem] flex flex-col gap-4 py-[2rem]
+  }
+  .list__info--items  {
+    @apply flex gap-2 mb-12
+  }
+  .list__info--items img{
+    @apply w-8 
+  }
+  .list__info--items p {
+    @apply font-semibold text-[24px]
+  }
+
+  /* slider */
+  .slider__tab {
+    @apply relative md:h-[40rem] h-[25rem] 
+  }
+  .slider__testimony  {
+    @apply absolute opacity-0
+  }
+  .slider__testimony.active  {
+    @apply absolute opacity-100
+  }
+  .slider__nav span.active  {
+    @apply bg-yellow
+  }
+
+  /* scholarship */
+  .scholarship__bgImage{
+    @apply bg-scholarshipImage h-[117.5vh] bg-no-repeat bg-cover bg-fixed
+  }
+  /* Business Brandings */
+  .businessBrandings{
+    @apply py-[7rem] 
+  }
+  .businessBrandings__wrapper {
+    @apply flex flex-wrap gap-10  place-content-center items-center
+  }
+  .businessBrandings__wrapper img  {
+    @apply max-w-[200px] h-fit mx-[8rem]
+  }
+  /* footer */
+  .footer__ctaInfo--links h4 {
+    @apply font-semibold text-base
+  }
+  .footer__ctaInfo--links ul li a {
+    @apply text-[15px] cursor-pointer
+  }
 }
 
 @layer utilities {
@@ -125,6 +203,9 @@
 
   .btn.bg--border {
     @apply border-[1px] border-black hover:bg-green hover:text-light;
+  }
+  .btn.bg--border-green {
+    @apply border-[1px] border-green hover:bg-yellow hover:text-light;
   }
   .btn.bg--border--yellow {
     @apply border-[1px] border-black bg-yellow text-light hover:bg-green;

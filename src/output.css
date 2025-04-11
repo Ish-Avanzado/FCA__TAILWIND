@@ -612,6 +612,8 @@ p{
 .header{
   position: relative;
   font-family: Raleway;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .header .header__branding{
@@ -778,7 +780,7 @@ p{
 /* banner */
 
 .homeBanner{
-  height: 90vh;
+  height: 80vh;
   background-image: url(../dist/img/videoPoster.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -802,15 +804,435 @@ p{
 .homeBanner__wrapper p{
   margin: auto;
   margin-bottom: 5rem;
-  max-width: 45rem;
+  max-width: 50rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* admission choice */
+
+.admissionChoice__wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.admissionChoice__info{
+  position: absolute;
+  margin-top: -6rem;
+  display: flex;
+  place-self: center;
+}
+
+.admissionChoice__info ul{
+  margin: auto;
+  display: flex;
+  max-width: 60rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.admissionChoice__info ul li{
+  display: flex;
+  border-right-width: 2px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.admissionChoice__info ul li i{
+  font-size: 2.8rem;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.admissionChoice__info ul li:last-child{
+  border-style: none;
+}
+
+.admissionChoice__info ul li h3{
+  font-size: 24px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 133 66 / var(--tw-text-opacity, 1));
+}
+
+.admissionChoice__info ul li small{
+  font-size: 12px;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.admissionChoice__wrapper iframe{
+  margin-top: 11rem;
+  margin-bottom: 5rem;
+}
+
+/* list */
+
+.list__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+  .list__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6rem;
+  }
+}
+
+.list__info--items{
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.list__info--items img{
+  width: 2rem;
+}
+
+.list__info--items p{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* slider */
+
+.slider__tab{
+  position: relative;
+  height: 25rem;
+}
+
+@media (min-width: 768px){
+  .slider__tab{
+    height: 40rem;
+  }
+}
+
+.slider__testimony{
+  position: absolute;
+  opacity: 0;
+}
+
+.slider__testimony.active{
+  position: absolute;
+  opacity: 1;
+}
+
+.slider__nav span.active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 166 37 / var(--tw-bg-opacity, 1));
+}
+
+/* scholarship */
+
+.scholarship__bgImage{
+  height: 117.5vh;
+  background-image: url(../dist/img/scholarship.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Business Brandings */
+
+.businessBrandings{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.businessBrandings__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.businessBrandings__wrapper img{
+  margin-left: 8rem;
+  margin-right: 8rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 200px;
+}
+
+/* footer */
+
+.footer__ctaInfo--links h4{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.footer__ctaInfo--links ul li a{
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-\[2rem\]{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-\[0\.5rem\]{
+  margin-bottom: 0.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
   display: none;
 }
 
+.h-\[15rem\]{
+  height: 15rem;
+}
+
+.h-\[5rem\]{
+  height: 5rem;
+}
+
+.h-\[90vh\]{
+  height: 90vh;
+}
+
+.w-\[15rem\]{
+  width: 15rem;
+}
+
+.w-\[6rem\]{
+  width: 6rem;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.max-w-\[10rem\]{
+  max-width: 10rem;
+}
+
+.max-w-\[30rem\]{
+  max-width: 30rem;
+}
+
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-\[_2fr\2c 0\.5fr\]{
+  grid-template-columns: 2fr 0.5fr;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.place-content-center{
+  place-content: center;
+}
+
+.place-items-center{
+  place-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
+.place-self-end{
+  place-self: end;
+}
+
+.place-self-center{
+  place-self: center;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border-b-\[1px\]{
+  border-bottom-width: 1px;
+}
+
+.border-dark{
+  --tw-border-opacity: 1;
+  border-color: rgb(43 43 43 / var(--tw-border-opacity, 1));
+}
+
+.bg-darkgray{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
+}
+
+.bg-grayBG{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity, 1));
+}
+
+.bg-grayImage{
+  background-image: url(../dist/img/fca-bg-grayscale.jpg);
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.px-\[10px\]{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-\[0\.3px\]{
+  padding-top: 0.3px;
+  padding-bottom: 0.3px;
+}
+
+.py-\[10rem\]{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.py-\[40px\]{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-\[5rem\]{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[2rem\]{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-\[1\.5rem\]{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-\[2rem\]{
+  padding-bottom: 2rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-start{
+  text-align: start;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
+}
+
+.text-\[26px\]{
+  font-size: 26px;
+}
+
+.text-\[30px\]{
+  font-size: 30px;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-\[2\.8rem\]{
+  font-size: 2.8rem;
+}
+
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-green{
+  --tw-text-opacity: 1;
+  color: rgb(40 148 30 / var(--tw-text-opacity, 1));
+}
+
+.text-grayBG{
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity, 1));
+}
+
+.text-darkgray{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .btn{
@@ -845,6 +1267,19 @@ p{
 .btn.bg--border:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(40 148 30 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.btn.bg--border-green{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(40 148 30 / var(--tw-border-opacity, 1));
+}
+
+.btn.bg--border-green:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 166 37 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -887,6 +1322,11 @@ p{
   background-color: rgb(218 166 37 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-yellow:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 166 37 / var(--tw-bg-opacity, 1));
+}
+
 @media (min-width: 768px){
   .md\:block{
     display: block;
@@ -896,7 +1336,35 @@ p{
     display: flex;
   }
 
+  .md\:grid{
+    display: grid;
+  }
+
+  .md\:h-\[70vh\]{
+    height: 70vh;
+  }
+
+  .md\:grid-cols-\[_2fr\2c 1fr\]{
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
   .md\:items-center{
     align-items: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:pr-\[6rem\]{
+    padding-right: 6rem;
   }
 }
