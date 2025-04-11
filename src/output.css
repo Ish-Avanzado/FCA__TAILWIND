@@ -984,10 +984,6 @@ p{
   font-size: 15px;
 }
 
-.m-auto{
-  margin: auto;
-}
-
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1063,10 +1059,6 @@ p{
   flex-direction: column;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .place-items-center{
   place-items: center;
 }
@@ -1099,13 +1091,23 @@ p{
   border-radius: 9999px;
 }
 
-.border-b-\[1px\]{
-  border-bottom-width: 1px;
+.border-b-\[2px\]{
+  border-bottom-width: 2px;
 }
 
 .border-dark{
   --tw-border-opacity: 1;
   border-color: rgb(43 43 43 / var(--tw-border-opacity, 1));
+}
+
+.border-darkgray{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity, 1));
+}
+
+.border-lightgray{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .bg-darkgray{
@@ -1145,6 +1147,11 @@ p{
   padding-bottom: 0.3px;
 }
 
+.py-\[1\.5rem\]{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-\[10rem\]{
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -1160,21 +1167,6 @@ p{
   padding-bottom: 5rem;
 }
 
-.py-\[\]{
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[2rem\]{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-\[1\.5rem\]{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-\[2rem\]{
   padding-bottom: 2rem;
 }
@@ -1183,16 +1175,16 @@ p{
   text-align: center;
 }
 
-.text-start{
-  text-align: start;
-}
-
 .text-\[16px\]{
   font-size: 16px;
 }
 
 .text-\[26px\]{
   font-size: 26px;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
 }
 
 .text-\[30px\]{
@@ -1204,35 +1196,18 @@ p{
   line-height: 1.5rem;
 }
 
-.text-\[2\.8rem\]{
-  font-size: 2.8rem;
-}
-
-.text-\[2\.5rem\]{
-  font-size: 2.5rem;
-}
-
-.text-\[2rem\]{
-  font-size: 2rem;
-}
-
 .font-semibold{
   font-weight: 600;
-}
-
-.text-green{
-  --tw-text-opacity: 1;
-  color: rgb(40 148 30 / var(--tw-text-opacity, 1));
-}
-
-.text-grayBG{
-  --tw-text-opacity: 1;
-  color: rgb(242 242 242 / var(--tw-text-opacity, 1));
 }
 
 .text-darkgray{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-green{
+  --tw-text-opacity: 1;
+  color: rgb(40 148 30 / var(--tw-text-opacity, 1));
 }
 
 .btn{
