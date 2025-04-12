@@ -21,7 +21,7 @@
           <div class="header__branding">
             <img src="./img/fca-logo-300x116.webp" alt="FCA-Logo" />
             <div
-              class="header__contactInfo hidden md:block md:flex md:items-center"
+              class="header__contactInfo hidden md:flex md:items-center"
             >
               <ul>
                 <li>
@@ -35,7 +35,7 @@
               </ul>
               <ul>
                 <li><a href="#" class="btn bg--blue">Facebook</a></li>
-                <li><a href="#" class="btn bg--border">FAQ's</a></li>
+                <li><a href="./FAQ.html" class="btn bg--border">FAQ's</a></li>
               </ul>
             </div>
             <div class="burger__menu cursor-pointer">
@@ -44,7 +44,7 @@
           </div>
           <div class="header__navd">
             <ul>
-              <li><a href="" class="active">HOME</a></li>
+              <li><a href="./home.html" class="active">HOME</a></li>
               <li><a href="">ABOUT</a></li>
               <li><a href="">ADMISSION</a></li>
               <li><a href="">SERVICES</a></li>
@@ -56,7 +56,7 @@
           </div>
           <div class="header__action">
             <ul class="header__navm">
-              <li><a href="">HOME</a></li>
+              <li><a href="./home.html">HOME</a></li>
               <li><a href="">ABOUT</a></li>
               <li><a href="">ADMISSION</a></li>
               <li><a href="">SERVICES</a></li>
@@ -78,13 +78,15 @@
               </ul>
               <ul>
                 <li><a href="#" class="btn bg--blue">Facebook</a></li>
-                <li><a href="#" class="btn bg--border--yellow">FAQ's</a></li>
+                <li><a href="./FAQ.html" class="btn bg--border--yellow">FAQ's</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
+
+
     <section class="homeBanner">
       <div class="container">
         <div class="homeBanner__wrapper">
@@ -133,9 +135,7 @@
               </li>
             </ul>
           </div>
-          <iframe
-            width="1520"
-            height="800"
+          <iframe class="w-[80vw] h-[80vh] m-auto"
             src="https://www.youtube.com/embed/IfZIR11Zdn4?si=5LSXdJK38gQC-M35"
             title="YouTube video player"
             frameborder="0"
@@ -148,13 +148,13 @@
     </section>
 
     <section
-      class="list bg-grayImage h-[90vh] md:h-[70vh] bg-no-repeat bg-cover"
+      class="list bg-grayImage h-[100vh] md:h-[80vh] bg-no-repeat bg-cover"
     >
       <div class="container">
         <div class="list__wrapper">
           <img
             src="../dist/img/FCA-Banner-ezgif.com-gif-to-webp-converter.webp"
-            alt=""
+            alt="" class="w-[18rem] md:w-[22rem]"
           />
           <div class="list__info">
             <div class="list__info--items">
@@ -224,7 +224,7 @@
                 </div>
               </div>
               <div
-                class="slider__testimonyDetails hidden md:block md:flex place-items-center gap-2"
+                class="slider__testimonyDetails hidden md:flex place-items-center gap-2"
               >
                 <div
                   class="slider__testimonyDetails--image md:flex md:flex-col gap-2"
@@ -285,7 +285,7 @@
                 </div>
               </div>
               <div
-                class="slider__testimonyDetails hidden md:block md:flex place-items-center gap-2"
+                class="slider__testimonyDetails hidden md:flex place-items-center gap-2"
               >
                 <div
                   class="slider__testimonyDetails--image md:flex md:flex-col gap-2 place-self-center"
@@ -349,7 +349,7 @@
                 </div>
               </div>
               <div
-                class="slider__testimonyDetails hidden md:block md:flex place-items-center gap-2"
+                class="slider__testimonyDetails hidden md:flex place-items-center gap-2"
               >
                 <div
                   class="slider__testimonyDetails--image md:flex md:flex-col gap-2"
@@ -414,7 +414,7 @@
           </div>
         </div>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61925.84513270616!2d121.34781900000002!3d14.055592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd43b1dc778b9f%3A0x29f8d3e5805a420e!2sFrontline%20Christian%20Academy!5e0!3m2!1sen!2sus!4v1744350031557!5m2!1sen!2sus" width="1710" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="w-[100vw] h-[64.2vh]" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61925.84513270616!2d121.34781900000002!3d14.055592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd43b1dc778b9f%3A0x29f8d3e5805a420e!2sFrontline%20Christian%20Academy!5e0!3m2!1sen!2sus!4v1744350031557!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -436,9 +436,15 @@
     <footer class="footer bg-grayBG py-[40px]">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__cta md:flex md:justify-between border-b-[2px] border-darkgray pb-[2rem]">
+          <div
+            class="footer__cta md:flex md:justify-between border-b-[2px] border-darkgray pb-[2rem] place-items-center md:place-items-start"
+          >
             <div class="footer__ctaBranding">
-              <img src="./img/fca-logo.webp" alt="FCA-Logo"  class="w-fit h-[5rem] object-cover">
+              <img
+                src="./img/fca-logo.webp"
+                alt="FCA-Logo"
+                class="w-fit h-[5rem] object-cover md:m-auto"
+              />
             </div>
             <div class="footer__ctaInfo md:flex gap-8 hidden">
               <div class="footer__ctaInfo--links">
@@ -463,7 +469,7 @@
               <div class="footer__ctaInfo--links">
                 <h4>Quicklinks</h4>
                 <ul>
-                  <li><a href="">Home</a></li>
+                  <li><a href="./home.html">Home</a></li>
                   <li><a href="">About</a></li>
                   <li><a href="">Admission</a></li>
                   <li><a href="">Services</a></li>
@@ -472,17 +478,20 @@
                 </ul>
               </div>
             </div>
-            <div class= "footer__ctaButton flex flex-col md:flex-row gap-4">
-              <a href="" class="btn bg--green">Give</a>
-              <a href="" class="btn bg--border-green">FAQ's</a>
+            <div
+              class="footer__ctaButton flex flex-col place-self-center md:place-self-start gap-2"
+            >
+              <a href="" class="btn bg--greenn"> Give </a>
+              <a href="./FAQ.html" class="btn bg--border-green">FAQ's</a>
             </div>
           </div>
           <div class="footer__copyRight flex justify-between py-[1.5rem]">
             <small>&copy; Frontline Christian Academy 2023</small>
             <div class="footer__fb flex flex-row gap-2">
               <small>Follow us:</small>
-              <a href="" class=" text-darkgray text-[2rem]"><i class="fa-brands fa-facebook"></i></a>
-              
+              <a href="" class="text-darkgray text-[2rem]"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
             </div>
           </div>
         </div>

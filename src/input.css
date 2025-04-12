@@ -13,13 +13,15 @@
   p {
     @apply text-sm;
   }
+  body {
+    @apply text-primary;
+  }
 }
 
 @layer components {
   .container {
     @apply max-w-[98rem] px-[1.5rem] w-full mx-auto;
   }
-
   .header {
     @apply font-[Raleway] relative text-darkgray;
   }
@@ -40,7 +42,7 @@
   }
 
   .header .header__navd ul li {
-    @apply border-r-[2px];
+    @apply border-r-[2px] text-base;
   }
 
   .header .header__navd ul li a {
@@ -62,10 +64,10 @@
     @apply w-[100%] transition-all;
   }
   .header .header__navm li {
-    @apply flex justify-center p-4;
+    @apply flex justify-center p-3 text-base;
   }
   .header .header__contactInfo ul li {
-    @apply flex justify-center p-3;
+    @apply flex justify-center p-2;
   }
 
   .header .header__contactInfo {
@@ -101,7 +103,7 @@
 
   /* banner */
   .homeBanner {
-    @apply bg-homeBannerImage  h-[80vh] bg-no-repeat bg-cover text-light;
+    @apply bg-homeBannerImage  h-[100vh] bg-no-repeat bg-cover text-light;
   }
   .homeBanner__wrapper {
     @apply text-center py-[7rem];
@@ -115,80 +117,109 @@
 
   /* admission choice */
   .admissionChoice__wrapper {
-    @apply flex flex-col relative 
+    @apply flex flex-col relative;
   }
-  .admissionChoice__info  {
- @apply absolute mt-[-6rem] flex place-self-center
+  .admissionChoice__info {
+    @apply absolute mt-[-6rem] flex place-self-center;
   }
   .admissionChoice__info ul {
-    @apply flex text-center bg-light rounded-lg justify-between max-w-[60rem] py-12 m-auto shadow-xl ;
+    @apply flex text-center bg-light rounded-lg justify-between max-w-[60rem] py-12 m-auto shadow-xl;
   }
   .admissionChoice__info ul li {
-    @apply border-r-2 flex px-12 
+    @apply border-r-2 flex px-12;
   }
   .admissionChoice__info ul li i {
-    @apply text-darkgray text-[2.8rem]
+    @apply text-darkgray text-[2.8rem];
   }
   .admissionChoice__info ul li:last-child {
-    @apply border-none
+    @apply border-none;
   }
   .admissionChoice__info ul li h3 {
     @apply text-[24px] font-semibold text-darkgreen;
   }
   .admissionChoice__info ul li small {
-    @apply text-darkgray text-[12px]
+    @apply text-darkgray text-[12px];
   }
-  .admissionChoice__wrapper iframe{
-    @apply mt-[11rem] mb-[5rem]
+  .admissionChoice__wrapper iframe {
+    @apply mt-[11rem] mb-[5rem];
   }
   /* list */
   .list__wrapper {
-    @apply md:grid md:grid-cols-[_1fr,_1fr] justify-items-center items-center md:p-[6rem] flex flex-col gap-4 py-[2rem]
+    @apply md:grid md:grid-cols-[_1fr,_1fr] justify-items-center items-center md:p-[6rem] flex flex-col gap-4 py-[2rem];
   }
-  .list__info--items  {
-    @apply flex gap-2 mb-12
+  .list__info--items {
+    @apply flex gap-2 mb-12;
   }
-  .list__info--items img{
-    @apply w-8 
+  .list__info--items img {
+    @apply w-8;
   }
   .list__info--items p {
-    @apply font-semibold text-[24px]
+    @apply font-semibold text-[20.8px];
   }
 
   /* slider */
   .slider__tab {
-    @apply relative md:h-[40rem] h-[25rem] 
+    @apply relative md:h-[40rem] h-[25rem];
   }
-  .slider__testimony  {
-    @apply absolute opacity-0
+  .slider__testimony {
+    @apply absolute opacity-0;
   }
-  .slider__testimony.active  {
-    @apply absolute opacity-100
+  .slider__testimony.active {
+    @apply absolute opacity-100;
   }
-  .slider__nav span.active  {
-    @apply bg-yellow
+  .slider__nav span.active {
+    @apply bg-yellow;
   }
 
   /* scholarship */
-  .scholarship__bgImage{
-    @apply bg-scholarshipImage h-[117.5vh] bg-no-repeat bg-cover bg-fixed
+  .scholarship__bgImage {
+    @apply bg-scholarshipImage w-[100vw] h-[145vh] bg-no-repeat bg-cover bg-fixed;
   }
   /* Business Brandings */
-  .businessBrandings{
-    @apply py-[7rem] 
+  .businessBrandings {
+    @apply py-[7rem];
   }
   .businessBrandings__wrapper {
-    @apply flex flex-wrap gap-10  place-content-center items-center
+    @apply flex flex-wrap gap-10  place-content-center items-center;
   }
-  .businessBrandings__wrapper img  {
-    @apply max-w-[200px] h-fit mx-[8rem]
+  .businessBrandings__wrapper img {
+    @apply max-w-[200px] h-fit mx-[8rem];
   }
   /* footer */
   .footer__ctaInfo--links h4 {
-    @apply font-semibold text-base
+    @apply font-semibold text-base;
   }
   .footer__ctaInfo--links ul li a {
-    @apply text-[15px] cursor-pointer
+    @apply text-[15px] cursor-pointer;
+  }
+
+  /* FAQ's */
+  .faqNav__details h3 {
+    @apply font-semibold text-[24px] mb-[2rem];
+  }
+  .faqNav__info {
+    @apply bg-lightgray mb-[1rem] p-2 md:flex md:flex-row;
+  }
+  .faqNav__info h4 {
+    @apply cursor-pointer font-semibold text-[clamp(16px,3vw,18px)] flex justify-between md:w-[65vw] mt-2 pl-2;
+  }
+  .faqNav__info p {
+    @apply max-h-[0rem] overflow-hidden transition-all mt-[2rem] hidden;
+  }
+  .faqNav__info p.open {
+    @apply max-h-[100%] overflow-hidden transition-all block;
+  }
+  .faq__nav.active {
+    @apply text-green underline;
+  }
+  .faqNav__choiceList {
+    @apply mb-[5rem];
+  }
+  .faqNav__details {
+    @apply opacity-0 max-h-[0rem] overflow-hidden;
+  }
+  .faqNav__details.active{
+    @apply opacity-100 max-h-[100%] overflow-hidden;
   }
 }
 
@@ -205,7 +236,10 @@
     @apply border-[1px] border-black hover:bg-green hover:text-light;
   }
   .btn.bg--border-green {
-    @apply border-[1px] border-green hover:bg-yellow hover:text-light;
+    @apply border-[1px] border-green hover:bg-yellow hover:text-light px-[4.6rem];
+  }
+  .btn.bg--greenn {
+    @apply bg-green text-light px-[5rem] hover:bg-yellow;
   }
   .btn.bg--border--yellow {
     @apply border-[1px] border-black bg-yellow text-light hover:bg-green;

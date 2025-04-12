@@ -39,3 +39,97 @@ function removeActiveDilaw() {
     dilaw.classList.remove("active");
   });
 }
+
+// FAQs
+
+const faqs = document.querySelectorAll(".faqNav__info h4");
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.querySelector("i").classList.toggle("open");
+    faq.nextElementSibling.classList.toggle("open");
+  });
+});
+
+// FAQs NAV
+const faqNav = document.querySelectorAll(".faq__nav");
+const faqDetail = document.querySelectorAll(".faqNav__details");
+faqNav.forEach((faqN) => {
+  faqN.addEventListener("click", () => {
+    removeActiveFaqN();
+    faqN.classList.add("active");
+    const activeDetail = document.querySelector(`#${faqN.id}-detail`);
+    removeActiveDetail();
+    activeDetail.classList.add("active");
+  });
+});
+
+function removeActiveFaqN() {
+  faqNav.forEach((faqN) => {
+    faqN.classList.remove("active");
+  });
+}
+
+function removeActiveDetail() {
+  faqDetail.forEach((detail) => {
+    detail.classList.remove("active");
+  });
+}
+
+// 2nd option correct js
+// const faqNav = document.querySelectorAll(".faq__nav");
+// const faqDetail = document.querySelectorAll(".faqNav__details");
+
+// faqNav.forEach((faqN) => {
+//   faqN.addEventListener("click", () => {
+//     removeActiveFaqN();
+//     faqN.classList.add("active");
+
+//     const activeDetail = document.querySelector(`#${faqN.id}-detail`);
+//     removeActiveDetail();
+
+//     if (activeDetail) {
+//       activeDetail.classList.add("active");
+//     }
+//   });
+// });
+
+// function removeActiveFaqN() {
+//   faqNav.forEach((faqN) => {
+//     faqN.classList.remove("active");
+//   });
+// }
+
+// function removeActiveDetail() {
+//   faqDetail.forEach((detail) => {
+//     detail.classList.remove("active");
+//   });
+// }
+
+
+// const faqNav = document.querySelectorAll(".faq__nav");
+// const faqDetail = document.querySelectorAll(".faqNav__details");
+
+// faqNav.forEach((faqN) => {
+//   faqN.addEventListener("click", () => {
+//     removeActiveFaqN();
+//     faqN.classList.add("active");
+//     const activeDetail = document.querySelector(`#${faqN.id}-detail`);
+//     removeActiveDetail();
+//     activeDetail.classList.add("active");
+//   });
+// });
+
+// function removeActiveFaqN() {
+//   faqNav.forEach((faqN) => {
+//     faqN.classList.remove("active");
+//   });
+// }
+
+// function removeActiveDetail() {
+//   faqDetail.forEach((detail) => {
+//     detail.classList.remove("active");
+//   });
+// }
+
+
+
