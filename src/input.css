@@ -11,7 +11,7 @@
   }
 
   p {
-    @apply text-sm;
+    @apply text-base;
   }
   body {
     @apply text-primary;
@@ -58,7 +58,7 @@
   }
 
   .header .header__action {
-    @apply md:hidden bg-light h-[90vh] absolute w-0 overflow-hidden transition-all right-0;
+    @apply md:hidden bg-light h-[90vh] absolute w-0 overflow-hidden transition-all right-0 z-10;
   }
   .header .header__action.open {
     @apply w-[100%] transition-all;
@@ -102,25 +102,28 @@
   }
 
   /* banner */
-  .homeBanner {
-    @apply bg-homeBannerImage  h-[100vh] bg-no-repeat bg-cover text-light;
+  .homeBanner__image {
+    @apply relative brightness-50 bg-homeBannerImage  h-[100vh] bg-no-repeat bg-cover;
   }
   .homeBanner__wrapper {
-    @apply text-center py-[7rem];
+    @apply text-center;
   }
-  .homeBanner__wrapper h1 {
+  .homeBanner__text {
+    @apply absolute top-[15rem] text-light;
+  }
+  .homeBanner__text h1 {
     @apply font-serif flex text-[clamp(39.36px,4vw,80px)] mb-[20px];
   }
-  .homeBanner__wrapper p {
+  .homeBanner__text p {
     @apply mb-[5rem] max-w-[50rem] m-auto text-base;
   }
 
   /* admission choice */
-  .admissionChoice__wrapper {
+  /* .admissionChoice__wrapper {
     @apply flex flex-col relative;
   }
   .admissionChoice__info {
-    @apply absolute mt-[-6rem] flex place-self-center;
+    @apply absolute mt-[-7rem] flex place-self-center;
   }
   .admissionChoice__info ul {
     @apply flex text-center bg-light rounded-lg justify-between max-w-[60rem] py-12 m-auto shadow-xl;
@@ -142,7 +145,10 @@
   }
   .admissionChoice__wrapper iframe {
     @apply mt-[11rem] mb-[5rem];
-  }
+  } */
+
+  
+
   /* list */
   .list__wrapper {
     @apply md:grid md:grid-cols-[_1fr,_1fr] justify-items-center items-center md:p-[6rem] flex flex-col gap-4 py-[2rem];
@@ -206,6 +212,7 @@
   .faqNav__info p {
     @apply max-h-[0rem] overflow-hidden transition-all mt-[2rem] hidden;
   }
+
   .faqNav__info p.open {
     @apply max-h-[100%] overflow-hidden transition-all block;
   }
@@ -218,7 +225,7 @@
   .faqNav__details {
     @apply opacity-0 max-h-[0rem] overflow-hidden;
   }
-  .faqNav__details.active{
+  .faqNav__details.active {
     @apply opacity-100 max-h-[100%] overflow-hidden;
   }
 }

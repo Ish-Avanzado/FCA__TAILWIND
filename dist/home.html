@@ -20,9 +20,7 @@
         <div class="header__wrapper">
           <div class="header__branding">
             <img src="./img/fca-logo-300x116.webp" alt="FCA-Logo" />
-            <div
-              class="header__contactInfo hidden md:flex md:items-center"
-            >
+            <div class="header__contactInfo hidden md:flex md:items-center">
               <ul>
                 <li>
                   <i class="fa-solid fa-phone"></i>
@@ -78,7 +76,9 @@
               </ul>
               <ul>
                 <li><a href="#" class="btn bg--blue">Facebook</a></li>
-                <li><a href="./FAQ.html" class="btn bg--border--yellow">FAQ's</a></li>
+                <li>
+                  <a href="./FAQ.html" class="btn bg--border--yellow">FAQ's</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -86,17 +86,19 @@
       </div>
     </header>
 
-
     <section class="homeBanner">
+      <div class="homeBanner__image"></div>
       <div class="container">
         <div class="homeBanner__wrapper">
-          <h1>Building Faith, Character and Academic Excellence</h1>
-          <p>
-            We genuinely care about the holistic development of our students,
-            and continue to reach for our vision of impacting the nation through
-            the development of Godly steward leaders.
-          </p>
-          <a href="#" class="btn bg--green">Inquire now!</a>
+          <div class="homeBanner__text">
+            <h1>Building Faith, Character and Academic Excellence</h1>
+            <p>
+              We genuinely care about the holistic development of our students,
+              and continue to reach for our vision of impacting the nation
+              through the development of Godly steward leaders.
+            </p>
+            <a href="#" class="btn bg--green">Inquire now!</a>
+          </div>
         </div>
       </div>
     </section>
@@ -104,7 +106,7 @@
     <section class="admissionChoice">
       <div class="container">
         <div class="admissionChoice__wrapper">
-          <div class="admissionChoice__info">
+          <!-- <div class="admissionChoice__info">
             <ul>
               <li>
                 <a href=""
@@ -134,8 +136,91 @@
                 >
               </li>
             </ul>
+          </div> -->
+
+          <div
+            class="admissionChoice__info2 grid grid-cols-2 md:grid-cols-4 text-center items-center md:bg-light rounded-xl max-w-[65rem] mx-auto md:shadow-xl mt-[-5rem] relative"
+          >
+            <div
+              class="admissionChoice__info2--cube hover:scale-[1.2] hover:duration-200 transition-transform ease-in-out bg-light group hover:bg-green hover:text-light shadow-xl md:shadow-none rounded-xl md:rounded-none md:hover:rounded-xl md:hover:border-none m-2 md:border-r-2"
+            >
+              <div class="py-[3rem] px-3 group-hover:text-light">
+                <a href="">
+                  <i
+                    class="fa-solid fa-cubes text-darkgray text-[2.8rem] group-hover:text-light"
+                  ></i>
+                  <h3
+                    class="text-[19.2px] font-semibold text-darkgreen group-hover:text-light pb-[1.5rem]"
+                  >
+                    Playschool
+                  </h3>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="admissionChoice__info2--cube hover:scale-[1.2] hover:duration-200 transition-transform ease-in-out bg-light group hover:bg-green hover:text-light shadow-xl md:shadow-none rounded-xl md:rounded-none md:hover:rounded-xl md:hover:border-none m-2 md:border-r-2"
+            >
+              <div class="py-[3rem] px-3 group-hover:text-light">
+                <a href="">
+                  <i
+                    class="fa-solid fa-person text-darkgray text-[2.8rem] group-hover:text-light"
+                  ></i>
+                  <h3
+                    class="text-[19.2px] font-semibold text-darkgreen group-hover:text-light"
+                  >
+                    Pre-Elementary
+                  </h3>
+                  <small class="text-[12.8px] group-hover:text-light">
+                    Nursery │ Pre-Kinder │ Kinder
+                  </small>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="admissionChoice__info2--cube hover:scale-[1.2] hover:duration-200 transition-transform ease-in-out bg-light group hover:bg-green hover:text-light shadow-xl md:shadow-none rounded-xl md:rounded-none md:hover:rounded-xl md:hover:border-none m-2 md:border-r-2"
+            >
+              <div class="py-[3rem] px-3 group-hover:text-light">
+                <a href="">
+                  <i
+                    class="fa-solid fa-book-open text-darkgray text-[2.8rem] group-hover:text-light"
+                  ></i>
+                  <h3
+                    class="text-[19.2px] font-semibold text-darkgreen group-hover:text-light"
+                  >
+                    Elementary
+                  </h3>
+                  <small class="text-[12.8px] group-hover:text-light">
+                    Primary ┃ Intermediate
+                  </small>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="admissionChoice__info2--cube hover:scale-[1.2] hover:duration-200 transition-transform ease-in-out bg-light group hover:bg-green hover:text-light shadow-xl md:shadow-none rounded-xl md:rounded-none md:hover:rounded-xl m-2"
+            >
+              <div class="py-[3rem] px-3 group-hover:text-light">
+                <a href="">
+                  <i
+                    class="fa-solid fa-user-tie text-darkgray text-[2.8rem] group-hover:text-light"
+                  ></i>
+                  <h3
+                    class="text-[19.2px] font-semibold text-darkgreen group-hover:text-light"
+                  >
+                    Junior High
+                  </h3>
+                  <small class="text-[12.8px] group-hover:text-light"
+                    >Grade 7-10</small
+                  >
+                </a>
+              </div>
+            </div>
           </div>
-          <iframe class="w-[80vw] h-[80vh] m-auto"
+
+          <iframe
+            class="w-[80vw] h-[100vh] m-auto y-[5rem] py-[5rem]"
             src="https://www.youtube.com/embed/IfZIR11Zdn4?si=5LSXdJK38gQC-M35"
             title="YouTube video player"
             frameborder="0"
@@ -154,7 +239,8 @@
         <div class="list__wrapper">
           <img
             src="../dist/img/FCA-Banner-ezgif.com-gif-to-webp-converter.webp"
-            alt="" class="w-[18rem] md:w-[22rem]"
+            alt=""
+            class="w-[18rem] md:w-[22rem]"
           />
           <div class="list__info">
             <div class="list__info--items">
@@ -191,7 +277,9 @@
               id="slider-1-content"
               class="slider__testimony my-[2rem] md:grid md:grid-cols-[_2fr,1fr] active"
             >
-              <div class="slider___testimonyDetails md:pr-[6rem] place-self-center">
+              <div
+                class="slider___testimonyDetails md:pr-[6rem] place-self-center"
+              >
                 <img src="./img/qoute.svg" alt="qoute" />
                 <p class="my-6 text-base">
                   Everyone has a smile on their faces and always greet people
@@ -251,7 +339,9 @@
               id="slider-2-content"
               class="slider__testimony my-[2rem] md:grid md:grid-cols-[_2fr,1fr]"
             >
-              <div class="slider___testimonyDetails md:pr-[6rem]  place-self-center">
+              <div
+                class="slider___testimonyDetails md:pr-[6rem] place-self-center"
+              >
                 <img src="./img/qoute.svg" alt="qoute" />
                 <p class="my-6 text-base">
                   I am grateful and blessed to this school and to Teacher
@@ -312,7 +402,9 @@
               id="slider-3-content"
               class="slider__testimony my-[2rem] md:grid md:grid-cols-[_2fr,1fr]"
             >
-              <div class="slider___testimonyDetails md:pr-[6rem]  place-self-center">
+              <div
+                class="slider___testimonyDetails md:pr-[6rem] place-self-center"
+              >
                 <img src="./img/qoute.svg" alt="qoute" />
                 <p class="my-6 text-base">
                   Maganda yung school 😍 Malinis and maganda facilities, all
@@ -376,22 +468,25 @@
           <ul class="flex gap-2 place-self-center">
             <li id="slider-1" class="slider__nav active">
               <a href="javascript:void(0)"
-                ><span id="slider-1-dilaw"
-                  class=" slider__nav-circle px-[10px] py-[0.3px] rounded-full bg-darkgray hover:bg-yellow active"
+                ><span
+                  id="slider-1-dilaw"
+                  class="slider__nav-circle px-[10px] py-[0.3px] rounded-full bg-darkgray hover:bg-yellow active"
                 ></span
               ></a>
             </li>
             <li id="slider-2" class="slider__nav">
               <a href="javascript:void(0)"
-                ><span id="slider-2-dilaw"
-                  class="slider__nav-circle  px-[10px] py-[0.3px] rounded-full bg-darkgray hover:bg-yellow"
+                ><span
+                  id="slider-2-dilaw"
+                  class="slider__nav-circle px-[10px] py-[0.3px] rounded-full bg-darkgray hover:bg-yellow"
                 ></span
               ></a>
             </li>
             <li id="slider-3" class="slider__nav">
               <a href="javascript:void(0)"
-                ><span id="slider-3-dilaw"
-                  class=" slider__nav-circle  px-[10px] py-[0.3px] rounded-full bg-darkgray hover:bg-yellow"
+                ><span
+                  id="slider-3-dilaw"
+                  class="slider__nav-circle px-[10px] py-[0.3px] rounded-full bg-darkgray hover:bg-yellow"
                 ></span
               ></a>
             </li>
@@ -403,32 +498,50 @@
     <section class="scholarship">
       <div class="scholarship__bgImage">
         <div class="container">
-        <div class="scholarship__wrapper py-[10rem]">
-          <div class="scholarship__details">
-            <h3 class="text-green font-semibold text-[30px]">Apply for a Scholarship</h3>
-            <p class="max-w-[30rem] text-base my-[2rem]">FCA's scholarship programs provide funding for qualified students. There are two programs: the Academic Scholarship and the Indigent Scholarship. Message us or visit us to find out more.</p>
-            <div class="scholarship__details--button">
-              <a href=""  class="btn bg--yellow max-w-[10rem] text-center">Academic Scholarship</a>
-              <a href=""  class="btn bg--yellow  max-w-[10rem] text-center">Indigent Scholarship</a>
+          <div class="scholarship__wrapper py-[10rem]">
+            <div class="scholarship__details">
+              <h3 class="text-green font-semibold text-[30px]">
+                Apply for a Scholarship
+              </h3>
+              <p class="max-w-[30rem] text-base my-[2rem]">
+                FCA's scholarship programs provide funding for qualified
+                students. There are two programs: the Academic Scholarship and
+                the Indigent Scholarship. Message us or visit us to find out
+                more.
+              </p>
+              <div class="scholarship__details--button">
+                <a href="" class="btn bg--yellow max-w-[10rem] text-center"
+                  >Academic Scholarship</a
+                >
+                <a href="" class="btn bg--yellow max-w-[10rem] text-center"
+                  >Indigent Scholarship</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <iframe class="w-[100vw] h-[64.2vh]" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61925.84513270616!2d121.34781900000002!3d14.055592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd43b1dc778b9f%3A0x29f8d3e5805a420e!2sFrontline%20Christian%20Academy!5e0!3m2!1sen!2sus!4v1744350031557!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          class="w-[100vw] h-[64.2vh] align-bottom"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61925.84513270616!2d121.34781900000002!3d14.055592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd43b1dc778b9f%3A0x29f8d3e5805a420e!2sFrontline%20Christian%20Academy!5e0!3m2!1sen!2sus!4v1744350031557!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
     <section class="businessBrandings">
       <div class="container">
         <div class="businessBrandings__wrapper">
-          <img src="./img/logo-fbs.png" alt="FBS-Logo">
-          <img src="./img/PFM- logo.jpg" alt="PFM-Logo">
-          <img src="./img/FTW-logo.svg" alt="FTM-Logo">
-          <img src="./img/FaceTheChildren-Logo.jpg" alt="FTC-Logo">
-          <img src="./img/FWC-logo.png" alt="FWC-Logo">
-          <img src="./img/GrowingLeaderslogo.png" alt="GL-Logo">
-          <img src="./img/ABEKA-logo.svg" alt="Abeka-Logo">
-          <img src="./img/CL-logo.webp" alt="Cl-Logo">
+          <img src="./img/logo-fbs.png" alt="FBS-Logo" />
+          <img src="./img/PFM- logo.jpg" alt="PFM-Logo" />
+          <img src="./img/FTW-logo.svg" alt="FTM-Logo" />
+          <img src="./img/FaceTheChildren-Logo.jpg" alt="FTC-Logo" />
+          <img src="./img/FWC-logo.png" alt="FWC-Logo" />
+          <img src="./img/GrowingLeaderslogo.png" alt="GL-Logo" />
+          <img src="./img/ABEKA-logo.svg" alt="Abeka-Logo" />
+          <img src="./img/CL-logo.webp" alt="Cl-Logo" />
         </div>
       </div>
     </section>
