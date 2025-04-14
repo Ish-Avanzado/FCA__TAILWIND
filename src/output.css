@@ -737,10 +737,14 @@ body{
 }
 
 .header .header__contactInfo ul li{
-  gap: 1rem;
+  gap: 0.25rem;
 }
 
 @media (min-width: 768px){
+  .header .header__contactInfo ul li{
+    gap: 1rem;
+  }
+
   .burger__menu{
     display: none;
   }
@@ -791,12 +795,18 @@ body{
 
 .homeBanner__image{
   position: relative;
-  height: 100vh;
+  height: 80vh;
   background-image: url(../dist/img/videoPoster.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   --tw-brightness: brightness(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 768px){
+  .homeBanner__image{
+    height: 100vh;
+  }
 }
 
 .homeBanner__wrapper{
@@ -810,6 +820,12 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@media (min-width: 768px){
+  .homeBanner__text{
+    top: 20rem;
+  }
+}
+
 .homeBanner__text h1{
   margin-bottom: 20px;
   display: flex;
@@ -821,8 +837,6 @@ body{
   margin: auto;
   margin-bottom: 5rem;
   max-width: 50rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 /* admission choice */
@@ -921,12 +935,18 @@ body{
 /* scholarship */
 
 .scholarship__bgImage{
-  height: 145vh;
-  width: 100vw;
+  width: 97vw;
   background-image: url(../dist/img/scholarship.webp);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px){
+  .scholarship__bgImage{
+    height: 129vh;
+    width: 100vw;
+  }
 }
 
 /* Business Brandings */
@@ -945,8 +965,8 @@ body{
 }
 
 .businessBrandings__wrapper img{
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   height: -moz-fit-content;
   height: fit-content;
   max-width: 200px;
@@ -971,12 +991,14 @@ body{
   margin-bottom: 2rem;
   font-size: 24px;
   font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .faqNav__info{
   margin-bottom: 1rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
   padding: 0.5rem;
 }
 
@@ -995,6 +1017,8 @@ body{
   padding-left: 0.5rem;
   font-size: clamp(16px,3vw,18px);
   font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 768px){
@@ -1004,10 +1028,12 @@ body{
 }
 
 .faqNav__info p{
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: none;
   max-height: 0rem;
   overflow: hidden;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1056,6 +1082,11 @@ body{
   margin: auto;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1066,37 +1097,28 @@ body{
   margin-bottom: 2rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mb-\[0\.5rem\]{
-  margin-bottom: 0.5rem;
-}
-
-.mb-\[6rem\]{
-  margin-bottom: 6rem;
-}
-
-.mt-\[-5rem\]{
-  margin-top: -5rem;
-}
-
-.mt-\[7rem\]{
-  margin-top: 7rem;
+.\!mt-\[0rem\]{
+  margin-top: 0rem !important;
 }
 
 .mb-2{
   margin-bottom: 0.5rem;
 }
 
-.mb-\[\]{
-  margin-bottom: ;
+.mb-\[0\.5rem\]{
+  margin-bottom: 0.5rem;
 }
 
-.mb-\[1rem\]{
-  margin-bottom: 1rem;
+.mb-\[5rem\]{
+  margin-bottom: 5rem;
+}
+
+.mb-\[6rem\]{
+  margin-bottom: 6rem;
+}
+
+.mt-\[3rem\]{
+  margin-top: 3rem;
 }
 
 .flex{
@@ -1119,6 +1141,10 @@ body{
   height: 15rem;
 }
 
+.h-\[4\.5rem\]{
+  height: 4.5rem;
+}
+
 .h-\[5rem\]{
   height: 5rem;
 }
@@ -1127,8 +1153,8 @@ body{
   height: 64.2vh;
 }
 
-.w-\[100vw\]{
-  width: 100vw;
+.h-\[80vh\]{
+  height: 80vh;
 }
 
 .w-\[15rem\]{
@@ -1139,12 +1165,20 @@ body{
   width: 18rem;
 }
 
-.w-\[6rem\]{
-  width: 6rem;
+.w-\[2rem\]{
+  width: 2rem;
+}
+
+.w-\[5rem\]{
+  width: 5rem;
 }
 
 .w-\[80vw\]{
   width: 80vw;
+}
+
+.w-\[97vw\]{
+  width: 97vw;
 }
 
 .w-fit{
@@ -1184,6 +1218,10 @@ body{
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .place-items-center{
   place-items: center;
 }
@@ -1204,6 +1242,10 @@ body{
   gap: 1rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-8{
   gap: 2rem;
 }
@@ -1216,16 +1258,8 @@ body{
   place-self: center;
 }
 
-.justify-self-center{
-  justify-self: center;
-}
-
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .rounded-xl{
@@ -1277,14 +1311,9 @@ body{
      object-fit: cover;
 }
 
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .px-\[10px\]{
@@ -1292,9 +1321,9 @@ body{
   padding-right: 10px;
 }
 
-.py-\[0\.3px\]{
-  padding-top: 0.3px;
-  padding-bottom: 0.3px;
+.py-\[-0\.3px\]{
+  padding-top: -0.3px;
+  padding-bottom: -0.3px;
 }
 
 .py-\[1\.5rem\]{
@@ -1307,14 +1336,19 @@ body{
   padding-bottom: 10rem;
 }
 
-.py-\[2\.8rem\]{
-  padding-top: 2.8rem;
-  padding-bottom: 2.8rem;
+.py-\[1rem\]{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.py-\[3\.5rem\]{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+.py-\[2\.4rem\]{
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.py-\[3rem\]{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-\[40px\]{
@@ -1327,56 +1361,12 @@ body{
   padding-bottom: 5rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-\[2\.1rem\]{
-  padding-top: 2.1rem;
-  padding-bottom: 2.1rem;
-}
-
-.py-\[3rem\]{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.pb-\[2rem\]{
-  padding-bottom: 2rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pb-\[1rem\]{
-  padding-bottom: 1rem;
-}
-
-.pb-\[1\.2rem\]{
-  padding-bottom: 1.2rem;
-}
-
 .pb-\[1\.5rem\]{
   padding-bottom: 1.5rem;
 }
 
-.pb-2{
-  padding-bottom: 0.5rem;
-}
-
-.pb-\[1\]{
-  padding-bottom: 1;
-}
-
-.pb-\[1\.5re\]{
-  padding-bottom: 1.5re;
+.pb-\[2rem\]{
+  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -1387,57 +1377,73 @@ body{
   vertical-align: bottom;
 }
 
-.text-\[12\.8px\]{
-  font-size: 12.8px;
+.\!text-\[15px\]{
+  font-size: 15px !important;
 }
 
-.text-\[16px\]{
-  font-size: 16px;
-}
-
-.text-\[19\.2px\]{
-  font-size: 19.2px;
-}
-
-.text-\[2\.8rem\]{
-  font-size: 2.8rem;
+.text-\[1\.8rem\]{
+  font-size: 1.8rem;
 }
 
 .text-\[24px\]{
   font-size: 24px;
 }
 
-.text-\[26px\]{
-  font-size: 26px;
-}
-
 .text-\[2rem\]{
   font-size: 2rem;
 }
 
-.text-\[30px\]{
-  font-size: 30px;
+.text-\[clamp\(14px\2c 2vw\2c 16px\)\]{
+  font-size: clamp(14px,2vw,16px);
+}
+
+.text-\[clamp\(16px\2c 4vw\2c 19\.2px\)\]{
+  font-size: clamp(16px,4vw,19.2px);
+}
+
+.text-\[clamp\(2\.5rem\2c 4vw\2c 2\.8rem\)\]{
+  font-size: clamp(2.5rem,4vw,2.8rem);
+}
+
+.text-\[clamp\(20px\2c 2vw\2c 22px\)\]{
+  font-size: clamp(20px,2vw,22px);
+}
+
+.text-\[clamp\(26px\2c 2vw\2c 30px\)\]{
+  font-size: clamp(26px,2vw,30px);
 }
 
 .text-\[clamp\(2rem\2c 4vw\2c 5rem\)\]{
   font-size: clamp(2rem,4vw,5rem);
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-\[clamp\(4px\2c 2vw\2c 12\.8px\)\]{
+  font-size: clamp(4px,2vw,12.8px);
+}
+
+.text-\[clamp\(5px\2c 2vw\2c 12\.8px\)\]{
+  font-size: clamp(5px,2vw,12.8px);
 }
 
 .font-bold{
   font-weight: 700;
 }
 
-.font-extralight{
-  font-weight: 200;
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-thin{
+  font-weight: 100;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-darkgray{
@@ -1448,6 +1454,11 @@ body{
 .text-darkgreen{
   --tw-text-opacity: 1;
   color: rgb(0 133 66 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
 .text-green{
@@ -1469,18 +1480,14 @@ body{
   transition-duration: 150ms;
 }
 
-.transition-transform{
-  transition-property: transform;
+.transition-all{
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .btn{
@@ -1592,38 +1599,6 @@ body{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-\[1\.2\]:hover{
-  --tw-scale-x: 1.2;
-  --tw-scale-y: 1.2;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-\[1\.\]:hover{
-  --tw-scale-x: 1.;
-  --tw-scale-y: 1.;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-\[1\.05\]:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:rounded-md:hover{
-  border-radius: 0.375rem;
-}
-
-.hover\:rounded-xl:hover{
-  border-radius: 0.75rem;
-}
-
 .hover\:bg-green:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(40 148 30 / var(--tw-bg-opacity, 1));
@@ -1632,21 +1607,6 @@ body{
 .hover\:bg-yellow:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(218 166 37 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:py-2:hover{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.hover\:py-\[1\.5rem\]:hover{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.hover\:py-\[2\.1rem\]:hover{
-  padding-top: 2.1rem;
-  padding-bottom: 2.1rem;
 }
 
 .hover\:text-light:hover{
@@ -1668,8 +1628,8 @@ body{
     margin: auto;
   }
 
-  .md\:m-0{
-    margin: 0px;
+  .md\:mt-\[-7rem\]{
+    margin-top: -7rem;
   }
 
   .md\:flex{
@@ -1680,12 +1640,28 @@ body{
     display: grid;
   }
 
-  .md\:h-\[80vh\]{
-    height: 80vh;
+  .md\:h-\[5rem\]{
+    height: 5rem;
+  }
+
+  .md\:h-\[65vh\]{
+    height: 65vh;
+  }
+
+  .md\:w-\[100vw\]{
+    width: 100vw;
+  }
+
+  .md\:w-\[2\.5rem\]{
+    width: 2.5rem;
   }
 
   .md\:w-\[22rem\]{
     width: 22rem;
+  }
+
+  .md\:w-\[6rem\]{
+    width: 6rem;
   }
 
   .md\:grid-cols-4{
@@ -1720,6 +1696,10 @@ body{
     justify-content: space-between;
   }
 
+  .md\:gap-2{
+    gap: 0.5rem;
+  }
+
   .md\:place-self-start{
     place-self: start;
   }
@@ -1728,29 +1708,8 @@ body{
     border-radius: 0px;
   }
 
-  .md\:rounded{
-    border-radius: 0.25rem;
-  }
-
-  .md\:border{
-    border-width: 1px;
-  }
-
-  .md\:border-l-2{
-    border-left-width: 2px;
-  }
-
   .md\:border-r-2{
     border-right-width: 2px;
-  }
-
-  .md\:border-r{
-    border-right-width: 1px;
-  }
-
-  .md\:border-gray-300{
-    --tw-border-opacity: 1;
-    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
   }
 
   .md\:bg-light{
@@ -1758,22 +1717,13 @@ body{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   }
 
-  .md\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .md\:py-2{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  .md\:py-\[5rem\]{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:pr-\[6rem\]{
     padding-right: 6rem;
-  }
-
-  .md\:pb-\[1\.5rem\]{
-    padding-bottom: 1.5rem;
   }
 
   .md\:text-left{
@@ -1792,30 +1742,17 @@ body{
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
-  .md\:shadow{
-    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .md\:hover\:rounded:hover{
-    border-radius: 0.25rem;
+  .md\:hover\:scale-\[1\.3\]:hover{
+    --tw-scale-x: 1.3;
+    --tw-scale-y: 1.3;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:hover\:rounded-xl:hover{
     border-radius: 0.75rem;
   }
 
-  .md\:hover\:border:hover{
-    border-width: 1px;
-  }
-
   .md\:hover\:border-none:hover{
     border-style: none;
-  }
-
-  .md\:hover\:py-2:hover{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 }
